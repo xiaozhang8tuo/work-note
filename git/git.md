@@ -2,6 +2,31 @@
 
 [TOC]
 
+- [图解git](#--git)
+  * [基础](#--)
+    + [1 git commit](#1-git-commit)
+    + [2 git branch](#2-git-branch)
+    + [3 git merge 分支的合并](#3-git-merge------)
+    + [4 git rebase](#4-git-rebase)
+  * [高级](#--)
+    + [1 Head](#1-head)
+    + [2 相对引用 ^](#2-------)
+    + [3 相对引用 ~](#3-------)
+    + [4 撤销变更 reset&revert](#4------reset-revert)
+  * [移动提交记录](#------)
+    + [1 cherry-pick](#1-cherry-pick)
+    + [2 交互式的rebase](#2-----rebase)
+  * [杂项](#--)
+    + [1 只取一个提交记录](#1---------)
+    + [2  提交的技巧](#2-------)
+    + [3 提交的技巧](#3------)
+    + [4 git tags](#4-git-tags)
+    + [5 git describe](#5-git-describe)
+    + [6 多次rebase](#6---rebase)
+    + [7 多个父节点](#7------)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # 图解git #
 
 https://oschina.gitee.io/learn-git-branching/  可视化git
@@ -453,6 +478,6 @@ Git 默认选择合并提交的“第一个”父提交，在操作符 `^` 后�
 
 <img src=".assets/image-20210625002746446.png" alt="image-20210625002746446" style="zoom:80%;" />
 
-git checkout HEAD~; git checkout HEAD^2; git checkout HEAD~2;  ------> 链式操作  **git checkout HEAD\~^2~2;**
+git checkout HEAD~; git checkout HEAD^2; git checkout HEAD~2;  ------>  链式操作   **git checkout HEAD\~^2~2;**
 
 ![image-20210625003120688](.assets/image-20210625003120688.png)
