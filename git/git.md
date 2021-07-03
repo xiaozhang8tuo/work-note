@@ -496,3 +496,5 @@ git checkout HEAD~; git checkout HEAD^2; git checkout HEAD~2;  ------>  链式�
 
 ![image-20210626012437994](.assets/image-20210626012437994.png)
 
+[1](./.assets/1.c)
+
