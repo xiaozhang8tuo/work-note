@@ -456,6 +456,18 @@ git describe <ref>
 
 ### 6 多次rebase ###
 
+希望得到有序的提交历史，也就是我们最终的结果应该是 `C6'` 在 `C7'` 上面， `C5'` 在 `C6'` 上面，依此类推。
+
+![image-20210626010928602](.assets/image-20210626010928602.png)
+
+git rebase master bugFix;
+
+git rebase  bugFix side ;
+
+git rebase side another;
+
+git rebase another master;
+
 
 
 ### 7 多个父节点 ###
@@ -479,3 +491,8 @@ Git 默认选择合并提交的“第一个”父提交，在操作符 `^` 后�
 git checkout HEAD~; git checkout HEAD^2; git checkout HEAD~2;  ------>  链式操作   **git checkout HEAD\~^2~2;**
 
 ![image-20210625003120688](.assets/image-20210625003120688.png)
+
+**git branch bugWork master\^\^2^;**
+
+![image-20210626012437994](.assets/image-20210626012437994.png)
+
